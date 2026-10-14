@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,55:1f6feb,100:8957e5&height=200&section=header&text=Arend%20Schuurman&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20developer%20and%20student&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="Arend Schuurman"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,55:1f6feb,100:8957e5&height=200&section=header&text=Arend%20Schuurman&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20developer%20and%20student&descSize=17&descAlignY=58" width="100%" alt="Arend Schuurman"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=19&duration=3000&pause=1200&color=58A6FF&center=true&vCenter=true&width=620&height=34&lines=Building+UnrealWatch%2C+a+self-hosted+hero+shooter;Running+everything+on+my+own+Proxmox+homelab;Student+at+Windesheim+in+the+Netherlands" alt="Typing intro"/>
