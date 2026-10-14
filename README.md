@@ -35,8 +35,8 @@ I'm a student at Windesheim who likes building complete systems: the game, the l
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp,unreal,py,fastapi,ts,react,nextjs,tauri,rust,postgres,redis,docker,cloudflare,linux&perline=14&theme=dark"/>
-    <img src="https://skillicons.dev/icons?i=cpp,unreal,py,fastapi,ts,react,nextjs,tauri,rust,postgres,redis,docker,cloudflare,linux&perline=14&theme=light" width="100%" alt="C++, Unreal Engine, Python, FastAPI, TypeScript, React, Next.js, Tauri, Rust, PostgreSQL, Redis, Docker, Cloudflare, Linux"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp%2Cunreal%2Cpy%2Cfastapi%2Cts%2Creact%2Cnextjs%2Ctauri%2Crust%2Cpostgres%2Credis%2Cdocker%2Ccloudflare%2Clinux&perline=14&theme=dark"/>
+    <img src="https://skillicons.dev/icons?i=cpp%2Cunreal%2Cpy%2Cfastapi%2Cts%2Creact%2Cnextjs%2Ctauri%2Crust%2Cpostgres%2Credis%2Cdocker%2Ccloudflare%2Clinux&perline=14&theme=light" width="100%" alt="C++, Unreal Engine, Python, FastAPI, TypeScript, React, Next.js, Tauri, Rust, PostgreSQL, Redis, Docker, Cloudflare, Linux"/>
   </picture>
 </p>
 
