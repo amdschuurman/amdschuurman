@@ -1,5 +1,6 @@
 """Render assets/stats-{dark,light}.svg from the GitHub GraphQL API.
 
+Run daily by ~/.local/bin/profile-stats (launchd) with this Mac's gh login.
 Env: GH_TOKEN (needs read access to private repos to count them),
      AUTHOR_EMAILS (optional, comma separated; counts commits made with
      addresses that are not linked to the account).
