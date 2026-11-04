@@ -5,7 +5,7 @@ Env: GH_TOKEN (fine-grained, read-only, all repos: needed to count private ones)
      AUTHOR_EMAILS (optional, comma separated; counts commits made with
      addresses that are not linked to the account).
 """
-import collections, datetime, json, os, urllib.request
+import collections, datetime, json, os, time, urllib.error, urllib.request
 
 TOKEN = os.environ["GH_TOKEN"]
 EMAILS = [e.strip() for e in os.environ.get("AUTHOR_EMAILS", "").split(",") if e.strip()]
@@ -18,7 +18,14 @@ def gql(query, **variables):
         data=json.dumps({"query": query, "variables": variables}).encode(),
         headers={"Authorization": f"bearer {TOKEN}", "User-Agent": "profile-stats"},
     )
-    data = json.load(urllib.request.urlopen(req))
+    for attempt in range(4):  # GitHub GraphQL sometimes answers 502/504 on heavy queries
+        try:
+            data = json.load(urllib.request.urlopen(req, timeout=60))
+            break
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+            if attempt == 3 or (isinstance(e, urllib.error.HTTPError) and e.code < 500):
+                raise
+            time.sleep(15 * (attempt + 1))
     if "errors" in data:
         raise SystemExit(data["errors"])
     return data["data"]
